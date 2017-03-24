@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09B34D151E855091005771C7 /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B34D141E855091005771C7 /* Demo1ViewController.m */; };
+		09B34D181E8565C4005771C7 /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B34D171E8565C4005771C7 /* Demo2ViewController.m */; };
+		09FA60FE1E821E2F001DEDCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA60FD1E821E2F001DEDCD /* main.m */; };
+		09FA61011E821E2F001DEDCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA61001E821E2F001DEDCD /* AppDelegate.m */; };
+		09FA61041E821E2F001DEDCD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA61031E821E2F001DEDCD /* ViewController.m */; };
+		09FA61071E821E2F001DEDCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA61051E821E2F001DEDCD /* Main.storyboard */; };
+		09FA61091E821E2F001DEDCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09FA61081E821E2F001DEDCD /* Assets.xcassets */; };
+		09FA610C1E821E2F001DEDCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA610A1E821E2F001DEDCD /* LaunchScreen.storyboard */; };
+		09FA61171E821E2F001DEDCD /* WyhChannelManagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA61161E821E2F001DEDCD /* WyhChannelManagerDemoTests.m */; };
+		09FA61221E821E2F001DEDCD /* WyhChannelManagerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA61211E821E2F001DEDCD /* WyhChannelManagerDemoUITests.m */; };
+		09FA61321E821E8C001DEDCD /* WyhChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA61311E821E8C001DEDCD /* WyhChannelView.m */; };
+		09FA61351E82246C001DEDCD /* WyhChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA61341E82246C001DEDCD /* WyhChannelModel.m */; };
+		09FA61381E822811001DEDCD /* WyhChannelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA61371E822811001DEDCD /* WyhChannelManager.m */; };
+		09FA613B1E824BA3001DEDCD /* WyhChannelManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA613A1E824BA3001DEDCD /* WyhChannelManagerView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09FA61131E821E2F001DEDCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09FA60F11E821E2F001DEDCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09FA60F81E821E2F001DEDCD;
+			remoteInfo = WyhChannelManagerDemo;
+		};
+		09FA611E1E821E2F001DEDCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09FA60F11E821E2F001DEDCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09FA60F81E821E2F001DEDCD;
+			remoteInfo = WyhChannelManagerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09B34D131E855091005771C7 /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
+		09B34D141E855091005771C7 /* Demo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
+		09B34D161E8565C4005771C7 /* Demo2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo2ViewController.h; sourceTree = "<group>"; };
+		09B34D171E8565C4005771C7 /* Demo2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo2ViewController.m; sourceTree = "<group>"; };
+		09FA60F91E821E2F001DEDCD /* WyhChannelManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WyhChannelManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09FA60FD1E821E2F001DEDCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09FA60FF1E821E2F001DEDCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		09FA61001E821E2F001DEDCD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09FA61021E821E2F001DEDCD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		09FA61031E821E2F001DEDCD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		09FA61061E821E2F001DEDCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09FA61081E821E2F001DEDCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09FA610B1E821E2F001DEDCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09FA610D1E821E2F001DEDCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09FA61121E821E2F001DEDCD /* WyhChannelManagerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WyhChannelManagerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09FA61161E821E2F001DEDCD /* WyhChannelManagerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhChannelManagerDemoTests.m; sourceTree = "<group>"; };
+		09FA61181E821E2F001DEDCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09FA611D1E821E2F001DEDCD /* WyhChannelManagerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WyhChannelManagerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09FA61211E821E2F001DEDCD /* WyhChannelManagerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhChannelManagerDemoUITests.m; sourceTree = "<group>"; };
+		09FA61231E821E2F001DEDCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09FA61301E821E8C001DEDCD /* WyhChannelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhChannelView.h; sourceTree = "<group>"; };
+		09FA61311E821E8C001DEDCD /* WyhChannelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WyhChannelView.m; sourceTree = "<group>"; };
+		09FA61331E82246C001DEDCD /* WyhChannelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhChannelModel.h; sourceTree = "<group>"; };
+		09FA61341E82246C001DEDCD /* WyhChannelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WyhChannelModel.m; sourceTree = "<group>"; };
+		09FA61361E822811001DEDCD /* WyhChannelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhChannelManager.h; sourceTree = "<group>"; };
+		09FA61371E822811001DEDCD /* WyhChannelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WyhChannelManager.m; sourceTree = "<group>"; };
+		09FA61391E824BA3001DEDCD /* WyhChannelManagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhChannelManagerView.h; sourceTree = "<group>"; };
+		09FA613A1E824BA3001DEDCD /* WyhChannelManagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WyhChannelManagerView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09FA60F61E821E2F001DEDCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09FA610F1E821E2F001DEDCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09FA611A1E821E2F001DEDCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09B34D121E855091005771C7 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				09B34D131E855091005771C7 /* Demo1ViewController.h */,
+				09B34D141E855091005771C7 /* Demo1ViewController.m */,
+				09B34D161E8565C4005771C7 /* Demo2ViewController.h */,
+				09B34D171E8565C4005771C7 /* Demo2ViewController.m */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		09FA60F01E821E2F001DEDCD = {
+			isa = PBXGroup;
+			children = (
+				09FA60FB1E821E2F001DEDCD /* WyhChannelManagerDemo */,
+				09FA61151E821E2F001DEDCD /* WyhChannelManagerDemoTests */,
+				09FA61201E821E2F001DEDCD /* WyhChannelManagerDemoUITests */,
+				09FA60FA1E821E2F001DEDCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09FA60FA1E821E2F001DEDCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09FA60F91E821E2F001DEDCD /* WyhChannelManagerDemo.app */,
+				09FA61121E821E2F001DEDCD /* WyhChannelManagerDemoTests.xctest */,
+				09FA611D1E821E2F001DEDCD /* WyhChannelManagerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09FA60FB1E821E2F001DEDCD /* WyhChannelManagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				09FA60FF1E821E2F001DEDCD /* AppDelegate.h */,
+				09FA61001E821E2F001DEDCD /* AppDelegate.m */,
+				09FA61021E821E2F001DEDCD /* ViewController.h */,
+				09FA61031E821E2F001DEDCD /* ViewController.m */,
+				09B34D121E855091005771C7 /* Demos */,
+				09FA612F1E821E45001DEDCD /* WyhChannelManager */,
+				09FA61051E821E2F001DEDCD /* Main.storyboard */,
+				09FA61081E821E2F001DEDCD /* Assets.xcassets */,
+				09FA610A1E821E2F001DEDCD /* LaunchScreen.storyboard */,
+				09FA610D1E821E2F001DEDCD /* Info.plist */,
+				09FA60FC1E821E2F001DEDCD /* Supporting Files */,
+			);
+			path = WyhChannelManagerDemo;
+			sourceTree = "<group>";
+		};
+		09FA60FC1E821E2F001DEDCD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09FA60FD1E821E2F001DEDCD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09FA61151E821E2F001DEDCD /* WyhChannelManagerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				09FA61161E821E2F001DEDCD /* WyhChannelManagerDemoTests.m */,
+				09FA61181E821E2F001DEDCD /* Info.plist */,
+			);
+			path = WyhChannelManagerDemoTests;
+			sourceTree = "<group>";
+		};
+		09FA61201E821E2F001DEDCD /* WyhChannelManagerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				09FA61211E821E2F001DEDCD /* WyhChannelManagerDemoUITests.m */,
+				09FA61231E821E2F001DEDCD /* Info.plist */,
+			);
+			path = WyhChannelManagerDemoUITests;
+			sourceTree = "<group>";
+		};
+		09FA612F1E821E45001DEDCD /* WyhChannelManager */ = {
+			isa = PBXGroup;
+			children = (
+				09FA61301E821E8C001DEDCD /* WyhChannelView.h */,
+				09FA61311E821E8C001DEDCD /* WyhChannelView.m */,
+				09FA61391E824BA3001DEDCD /* WyhChannelManagerView.h */,
+				09FA613A1E824BA3001DEDCD /* WyhChannelManagerView.m */,
+				09FA61331E82246C001DEDCD /* WyhChannelModel.h */,
+				09FA61341E82246C001DEDCD /* WyhChannelModel.m */,
+				09FA61361E822811001DEDCD /* WyhChannelManager.h */,
+				09FA61371E822811001DEDCD /* WyhChannelManager.m */,
+			);
+			path = WyhChannelManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09FA60F81E821E2F001DEDCD /* WyhChannelManagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09FA61261E821E2F001DEDCD /* Build configuration list for PBXNativeTarget "WyhChannelManagerDemo" */;
+			buildPhases = (
+				09FA60F51E821E2F001DEDCD /* Sources */,
+				09FA60F61E821E2F001DEDCD /* Frameworks */,
+				09FA60F71E821E2F001DEDCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WyhChannelManagerDemo;
+			productName = WyhChannelManagerDemo;
+			productReference = 09FA60F91E821E2F001DEDCD /* WyhChannelManagerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09FA61111E821E2F001DEDCD /* WyhChannelManagerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09FA61291E821E2F001DEDCD /* Build configuration list for PBXNativeTarget "WyhChannelManagerDemoTests" */;
+			buildPhases = (
+				09FA610E1E821E2F001DEDCD /* Sources */,
+				09FA610F1E821E2F001DEDCD /* Frameworks */,
+				09FA61101E821E2F001DEDCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09FA61141E821E2F001DEDCD /* PBXTargetDependency */,
+			);
+			name = WyhChannelManagerDemoTests;
+			productName = WyhChannelManagerDemoTests;
+			productReference = 09FA61121E821E2F001DEDCD /* WyhChannelManagerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09FA611C1E821E2F001DEDCD /* WyhChannelManagerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09FA612C1E821E2F001DEDCD /* Build configuration list for PBXNativeTarget "WyhChannelManagerDemoUITests" */;
+			buildPhases = (
+				09FA61191E821E2F001DEDCD /* Sources */,
+				09FA611A1E821E2F001DEDCD /* Frameworks */,
+				09FA611B1E821E2F001DEDCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09FA611F1E821E2F001DEDCD /* PBXTargetDependency */,
+			);
+			name = WyhChannelManagerDemoUITests;
+			productName = WyhChannelManagerDemoUITests;
+			productReference = 09FA611D1E821E2F001DEDCD /* WyhChannelManagerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09FA60F11E821E2F001DEDCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = wyh;
+				TargetAttributes = {
+					09FA60F81E821E2F001DEDCD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FUAH8HMK9E;
+						ProvisioningStyle = Automatic;
+					};
+					09FA61111E821E2F001DEDCD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 09FA60F81E821E2F001DEDCD;
+					};
+					09FA611C1E821E2F001DEDCD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 09FA60F81E821E2F001DEDCD;
+					};
+				};
+			};
+			buildConfigurationList = 09FA60F41E821E2F001DEDCD /* Build configuration list for PBXProject "WyhChannelManagerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09FA60F01E821E2F001DEDCD;
+			productRefGroup = 09FA60FA1E821E2F001DEDCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09FA60F81E821E2F001DEDCD /* WyhChannelManagerDemo */,
+				09FA61111E821E2F001DEDCD /* WyhChannelManagerDemoTests */,
+				09FA611C1E821E2F001DEDCD /* WyhChannelManagerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09FA60F71E821E2F001DEDCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09FA610C1E821E2F001DEDCD /* LaunchScreen.storyboard in Resources */,
+				09FA61091E821E2F001DEDCD /* Assets.xcassets in Resources */,
+				09FA61071E821E2F001DEDCD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09FA61101E821E2F001DEDCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09FA611B1E821E2F001DEDCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09FA60F51E821E2F001DEDCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09FA61351E82246C001DEDCD /* WyhChannelModel.m in Sources */,
+				09FA61041E821E2F001DEDCD /* ViewController.m in Sources */,
+				09FA61011E821E2F001DEDCD /* AppDelegate.m in Sources */,
+				09FA60FE1E821E2F001DEDCD /* main.m in Sources */,
+				09FA61381E822811001DEDCD /* WyhChannelManager.m in Sources */,
+				09B34D151E855091005771C7 /* Demo1ViewController.m in Sources */,
+				09B34D181E8565C4005771C7 /* Demo2ViewController.m in Sources */,
+				09FA613B1E824BA3001DEDCD /* WyhChannelManagerView.m in Sources */,
+				09FA61321E821E8C001DEDCD /* WyhChannelView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09FA610E1E821E2F001DEDCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09FA61171E821E2F001DEDCD /* WyhChannelManagerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09FA61191E821E2F001DEDCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09FA61221E821E2F001DEDCD /* WyhChannelManagerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09FA61141E821E2F001DEDCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09FA60F81E821E2F001DEDCD /* WyhChannelManagerDemo */;
+			targetProxy = 09FA61131E821E2F001DEDCD /* PBXContainerItemProxy */;
+		};
+		09FA611F1E821E2F001DEDCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09FA60F81E821E2F001DEDCD /* WyhChannelManagerDemo */;
+			targetProxy = 09FA611E1E821E2F001DEDCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09FA61051E821E2F001DEDCD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09FA61061E821E2F001DEDCD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09FA610A1E821E2F001DEDCD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09FA610B1E821E2F001DEDCD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09FA61241E821E2F001DEDCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09FA61251E821E2F001DEDCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09FA61271E821E2F001DEDCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 609223770@qq.com (DXAJ93X4MH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 609223770@qq.com (DXAJ93X4MH)";
+				DEVELOPMENT_TEAM = FUAH8HMK9E;
+				INFOPLIST_FILE = WyhChannelManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--------.WyhChannelManagerDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09FA61281E821E2F001DEDCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 609223770@qq.com (DXAJ93X4MH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 609223770@qq.com (DXAJ93X4MH)";
+				DEVELOPMENT_TEAM = FUAH8HMK9E;
+				INFOPLIST_FILE = WyhChannelManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--------.WyhChannelManagerDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		09FA612A1E821E2F001DEDCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WyhChannelManagerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--------.WyhChannelManagerDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WyhChannelManagerDemo.app/WyhChannelManagerDemo";
+			};
+			name = Debug;
+		};
+		09FA612B1E821E2F001DEDCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WyhChannelManagerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--------.WyhChannelManagerDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WyhChannelManagerDemo.app/WyhChannelManagerDemo";
+			};
+			name = Release;
+		};
+		09FA612D1E821E2F001DEDCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WyhChannelManagerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--------.WyhChannelManagerDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WyhChannelManagerDemo;
+			};
+			name = Debug;
+		};
+		09FA612E1E821E2F001DEDCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WyhChannelManagerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--------.WyhChannelManagerDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WyhChannelManagerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09FA60F41E821E2F001DEDCD /* Build configuration list for PBXProject "WyhChannelManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09FA61241E821E2F001DEDCD /* Debug */,
+				09FA61251E821E2F001DEDCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09FA61261E821E2F001DEDCD /* Build configuration list for PBXNativeTarget "WyhChannelManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09FA61271E821E2F001DEDCD /* Debug */,
+				09FA61281E821E2F001DEDCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09FA61291E821E2F001DEDCD /* Build configuration list for PBXNativeTarget "WyhChannelManagerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09FA612A1E821E2F001DEDCD /* Debug */,
+				09FA612B1E821E2F001DEDCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09FA612C1E821E2F001DEDCD /* Build configuration list for PBXNativeTarget "WyhChannelManagerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09FA612D1E821E2F001DEDCD /* Debug */,
+				09FA612E1E821E2F001DEDCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09FA60F11E821E2F001DEDCD /* Project object */;
+}
