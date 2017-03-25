@@ -16,7 +16,7 @@
 
 @property (nonatomic, strong) NSMutableArray *bottom;
 
-@property (nonatomic, weak) WyhChannelManager *manager;
+@property (nonatomic, strong) WyhChannelManager *manager;
 
 @property (nonatomic, strong) WyhChannelManagerView *managerView;
 
@@ -108,7 +108,10 @@
         _managerView = channelView;
         
         [channelView chooseChannelCallBack:^{
-            [self dismissViewControllerAnimated:YES completion:nil];
+            [WyhChannelManager setUpdateIfNeeds];
+            [self dismissViewControllerAnimated:YES completion:^{
+                
+            }];
         }];
         
     }

@@ -42,6 +42,20 @@
     
     self.list = @[@"*普通边框显示频道",@"*自定义顶部和底部频道图案",@"*移动频道显示占位图",@"*自定义大背景图",@"*前两个频道固定不可编辑",@"*模拟实际频道运用,务必要看"].mutableCopy;
     
+    [self resetManagerCallBack];
+    
+    [self.view addSubview:self.tableView];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"重置" style:(UIBarButtonItemStyleDone) target:self action:@selector(resetManagerCallBack)];
+    
+}
+
+-(void)resetManagerCallBack{
+    
+    self.topCountLabel.text = @"0";
+    self.bottomCountLabel.text = @"0";
+    self.selectCountLabel.text = @"0";
+    
     [WyhChannelManager updateChannelCallBack:^(NSArray<WyhChannelModel *> *top, NSArray<WyhChannelModel *> *bottom, NSUInteger chooseIndex) {
         
         self.selectCountLabel.text = [NSString stringWithFormat:@"%ld",chooseIndex];
@@ -54,7 +68,7 @@
             }
             idx++;
         }
-       
+        
         NSUInteger index = 0;
         for (WyhChannelModel *model in bottom) {
             NSLog(@"回调下数组:%@,选中的index:%ld",[model description],chooseIndex);
@@ -65,8 +79,7 @@
         }
         
     }];
-    
-    [self.view addSubview:self.tableView];
+
     
 }
 

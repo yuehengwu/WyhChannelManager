@@ -13,7 +13,7 @@
 #import "Demo3WyhSubScrollPageVC.h"
 @interface Demo3WyhScrollPageBaseVC ()<WyhScrollPageDelegate>
 
-@property (nonatomic, strong) WyhChannelManager *manager;
+@property (nonatomic, weak) WyhChannelManager *manager;
 
 @property (nonatomic, strong) WyhSegmentView *segmentView;
 
