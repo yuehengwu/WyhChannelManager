@@ -10,7 +10,7 @@
 #import "WyhChannelManager.h"
 #import "Demo1ViewController.h"
 #import "Demo2ViewController.h"
-
+#import "Demo3WyhScrollPageBaseVC.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -40,7 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.list = @[@"普通边框显示频道",@"自定义顶部和底部频道图案",@"移动频道显示占位图",@"自定义大背景图",@"前两个频道固定不可编辑"].mutableCopy;
+    self.list = @[@"*普通边框显示频道",@"*自定义顶部和底部频道图案",@"*移动频道显示占位图",@"*自定义大背景图",@"*前两个频道固定不可编辑",@"*模拟实际频道运用,务必要看"].mutableCopy;
     
     [WyhChannelManager updateChannelCallBack:^(NSArray<WyhChannelModel *> *top, NSArray<WyhChannelModel *> *bottom, NSUInteger chooseIndex) {
         
@@ -147,6 +147,12 @@
             [self presentViewController:navi animated:YES completion:nil];
         }
             break;
+        case 5:
+        {
+            Demo3WyhScrollPageBaseVC *demo = [[Demo3WyhScrollPageBaseVC alloc]init];
+            [self.navigationController pushViewController:demo animated:YES];
+        }
+            break;
         default:
             break;
     }
@@ -155,7 +161,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 40;
+    return 38;
 }
 
 #pragma mark - lazy

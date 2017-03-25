@@ -19,6 +19,8 @@
 
 /** 当前频道名称 */
 @property (nonatomic, strong) NSString *channel_name;
+/** 当前频道id,此属性一般实战项目中会用到 */
+@property (nonatomic, strong) NSString* channel_id;
 /** 当前频道是否是顶部 */
 @property (nonatomic, assign) BOOL isTop;
 /** 当前频道是否为热门 */

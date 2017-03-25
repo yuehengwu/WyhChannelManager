@@ -72,7 +72,7 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
 
 #pragma mark - initialize
 
--(void)initialize {
++(void)initialize{
     
 #if DEBUG
     NSLog(@"\n\
@@ -83,6 +83,10 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
           具体属性含义请前往WyhChannelManager.h中查看 \n\
           由于作者比较懒惰,并没有将所有样式封装到WyhChannelStyle里 望海涵\n");
 #endif
+    
+}
+
+-(void)initialize {
     
     /** 
      *  如果你发现有更好的处理方式或者更多样化的样式需求

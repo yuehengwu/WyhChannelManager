@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0994F4671E85F91500FCA11E /* UIView+WyhExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0994F4541E85F91500FCA11E /* UIView+WyhExtension.m */; };
+		0994F4681E85F91500FCA11E /* UIViewController+WyhScrollPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0994F4561E85F91500FCA11E /* UIViewController+WyhScrollPageController.m */; };
+		0994F4691E85F91500FCA11E /* WyhCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0994F4581E85F91500FCA11E /* WyhCollectionView.m */; };
+		0994F46A1E85F91500FCA11E /* WyhConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 0994F45A1E85F91500FCA11E /* WyhConst.m */; };
+		0994F46B1E85F91500FCA11E /* WyhContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0994F45C1E85F91500FCA11E /* WyhContentView.m */; };
+		0994F46C1E85F91500FCA11E /* WyhScrollPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0994F4601E85F91500FCA11E /* WyhScrollPageView.m */; };
+		0994F46D1E85F91500FCA11E /* WyhSegmentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0994F4621E85F91500FCA11E /* WyhSegmentStyle.m */; };
+		0994F46E1E85F91500FCA11E /* WyhSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0994F4641E85F91500FCA11E /* WyhSegmentView.m */; };
+		0994F46F1E85F91500FCA11E /* WyhTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0994F4661E85F91500FCA11E /* WyhTitleView.m */; };
+		0994F4721E85F95700FCA11E /* Demo3WyhScrollPageBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0994F4711E85F95700FCA11E /* Demo3WyhScrollPageBaseVC.m */; };
+		0994F4771E85FD5900FCA11E /* WyhChannelList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0994F4761E85FD5900FCA11E /* WyhChannelList.plist */; };
+		0994F47A1E8600E400FCA11E /* Demo3TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0994F4791E8600E400FCA11E /* Demo3TestViewController.m */; };
+		0994F47D1E8600FA00FCA11E /* Demo3WyhSubScrollPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0994F47C1E8600FA00FCA11E /* Demo3WyhSubScrollPageVC.m */; };
 		09B34D151E855091005771C7 /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B34D141E855091005771C7 /* Demo1ViewController.m */; };
 		09B34D181E8565C4005771C7 /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B34D171E8565C4005771C7 /* Demo2ViewController.m */; };
 		09FA60FE1E821E2F001DEDCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA60FD1E821E2F001DEDCD /* main.m */; };
@@ -41,6 +54,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0994F4531E85F91500FCA11E /* UIView+WyhExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WyhExtension.h"; sourceTree = "<group>"; };
+		0994F4541E85F91500FCA11E /* UIView+WyhExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WyhExtension.m"; sourceTree = "<group>"; };
+		0994F4551E85F91500FCA11E /* UIViewController+WyhScrollPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WyhScrollPageController.h"; sourceTree = "<group>"; };
+		0994F4561E85F91500FCA11E /* UIViewController+WyhScrollPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WyhScrollPageController.m"; sourceTree = "<group>"; };
+		0994F4571E85F91500FCA11E /* WyhCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhCollectionView.h; sourceTree = "<group>"; };
+		0994F4581E85F91500FCA11E /* WyhCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WyhCollectionView.m; sourceTree = "<group>"; };
+		0994F4591E85F91500FCA11E /* WyhConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhConst.h; sourceTree = "<group>"; };
+		0994F45A1E85F91500FCA11E /* WyhConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WyhConst.m; sourceTree = "<group>"; };
+		0994F45B1E85F91500FCA11E /* WyhContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhContentView.h; sourceTree = "<group>"; };
+		0994F45C1E85F91500FCA11E /* WyhContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WyhContentView.m; sourceTree = "<group>"; };
+		0994F45D1E85F91500FCA11E /* WyhScrollPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhScrollPage.h; sourceTree = "<group>"; };
+		0994F45E1E85F91500FCA11E /* WyhScrollPageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhScrollPageDelegate.h; sourceTree = "<group>"; };
+		0994F45F1E85F91500FCA11E /* WyhScrollPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhScrollPageView.h; sourceTree = "<group>"; };
+		0994F4601E85F91500FCA11E /* WyhScrollPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WyhScrollPageView.m; sourceTree = "<group>"; };
+		0994F4611E85F91500FCA11E /* WyhSegmentStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhSegmentStyle.h; sourceTree = "<group>"; };
+		0994F4621E85F91500FCA11E /* WyhSegmentStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WyhSegmentStyle.m; sourceTree = "<group>"; };
+		0994F4631E85F91500FCA11E /* WyhSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhSegmentView.h; sourceTree = "<group>"; };
+		0994F4641E85F91500FCA11E /* WyhSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WyhSegmentView.m; sourceTree = "<group>"; };
+		0994F4651E85F91500FCA11E /* WyhTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhTitleView.h; sourceTree = "<group>"; };
+		0994F4661E85F91500FCA11E /* WyhTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WyhTitleView.m; sourceTree = "<group>"; };
+		0994F4701E85F95700FCA11E /* Demo3WyhScrollPageBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3WyhScrollPageBaseVC.h; sourceTree = "<group>"; };
+		0994F4711E85F95700FCA11E /* Demo3WyhScrollPageBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo3WyhScrollPageBaseVC.m; sourceTree = "<group>"; };
+		0994F4761E85FD5900FCA11E /* WyhChannelList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WyhChannelList.plist; sourceTree = "<group>"; };
+		0994F4781E8600E400FCA11E /* Demo3TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3TestViewController.h; sourceTree = "<group>"; };
+		0994F4791E8600E400FCA11E /* Demo3TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo3TestViewController.m; sourceTree = "<group>"; };
+		0994F47B1E8600FA00FCA11E /* Demo3WyhSubScrollPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3WyhSubScrollPageVC.h; sourceTree = "<group>"; };
+		0994F47C1E8600FA00FCA11E /* Demo3WyhSubScrollPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo3WyhSubScrollPageVC.m; sourceTree = "<group>"; };
 		09B34D131E855091005771C7 /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
 		09B34D141E855091005771C7 /* Demo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
 		09B34D161E8565C4005771C7 /* Demo2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo2ViewController.h; sourceTree = "<group>"; };
@@ -96,6 +136,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0994F4521E85F91500FCA11E /* WyhScrollPageView */ = {
+			isa = PBXGroup;
+			children = (
+				0994F4531E85F91500FCA11E /* UIView+WyhExtension.h */,
+				0994F4541E85F91500FCA11E /* UIView+WyhExtension.m */,
+				0994F4551E85F91500FCA11E /* UIViewController+WyhScrollPageController.h */,
+				0994F4561E85F91500FCA11E /* UIViewController+WyhScrollPageController.m */,
+				0994F4571E85F91500FCA11E /* WyhCollectionView.h */,
+				0994F4581E85F91500FCA11E /* WyhCollectionView.m */,
+				0994F4591E85F91500FCA11E /* WyhConst.h */,
+				0994F45A1E85F91500FCA11E /* WyhConst.m */,
+				0994F45B1E85F91500FCA11E /* WyhContentView.h */,
+				0994F45C1E85F91500FCA11E /* WyhContentView.m */,
+				0994F45D1E85F91500FCA11E /* WyhScrollPage.h */,
+				0994F45E1E85F91500FCA11E /* WyhScrollPageDelegate.h */,
+				0994F45F1E85F91500FCA11E /* WyhScrollPageView.h */,
+				0994F4601E85F91500FCA11E /* WyhScrollPageView.m */,
+				0994F4611E85F91500FCA11E /* WyhSegmentStyle.h */,
+				0994F4621E85F91500FCA11E /* WyhSegmentStyle.m */,
+				0994F4631E85F91500FCA11E /* WyhSegmentView.h */,
+				0994F4641E85F91500FCA11E /* WyhSegmentView.m */,
+				0994F4651E85F91500FCA11E /* WyhTitleView.h */,
+				0994F4661E85F91500FCA11E /* WyhTitleView.m */,
+			);
+			path = WyhScrollPageView;
+			sourceTree = "<group>";
+		};
 		09B34D121E855091005771C7 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +170,13 @@
 				09B34D141E855091005771C7 /* Demo1ViewController.m */,
 				09B34D161E8565C4005771C7 /* Demo2ViewController.h */,
 				09B34D171E8565C4005771C7 /* Demo2ViewController.m */,
+				0994F4701E85F95700FCA11E /* Demo3WyhScrollPageBaseVC.h */,
+				0994F4711E85F95700FCA11E /* Demo3WyhScrollPageBaseVC.m */,
+				0994F4781E8600E400FCA11E /* Demo3TestViewController.h */,
+				0994F4791E8600E400FCA11E /* Demo3TestViewController.m */,
+				0994F47B1E8600FA00FCA11E /* Demo3WyhSubScrollPageVC.h */,
+				0994F47C1E8600FA00FCA11E /* Demo3WyhSubScrollPageVC.m */,
+				0994F4761E85FD5900FCA11E /* WyhChannelList.plist */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -136,6 +210,7 @@
 				09FA61031E821E2F001DEDCD /* ViewController.m */,
 				09B34D121E855091005771C7 /* Demos */,
 				09FA612F1E821E45001DEDCD /* WyhChannelManager */,
+				0994F4521E85F91500FCA11E /* WyhScrollPageView */,
 				09FA61051E821E2F001DEDCD /* Main.storyboard */,
 				09FA61081E821E2F001DEDCD /* Assets.xcassets */,
 				09FA610A1E821E2F001DEDCD /* LaunchScreen.storyboard */,
@@ -296,6 +371,7 @@
 				09FA610C1E821E2F001DEDCD /* LaunchScreen.storyboard in Resources */,
 				09FA61091E821E2F001DEDCD /* Assets.xcassets in Resources */,
 				09FA61071E821E2F001DEDCD /* Main.storyboard in Resources */,
+				0994F4771E85FD5900FCA11E /* WyhChannelList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,10 +401,22 @@
 				09FA61011E821E2F001DEDCD /* AppDelegate.m in Sources */,
 				09FA60FE1E821E2F001DEDCD /* main.m in Sources */,
 				09FA61381E822811001DEDCD /* WyhChannelManager.m in Sources */,
+				0994F4681E85F91500FCA11E /* UIViewController+WyhScrollPageController.m in Sources */,
+				0994F4671E85F91500FCA11E /* UIView+WyhExtension.m in Sources */,
 				09B34D151E855091005771C7 /* Demo1ViewController.m in Sources */,
+				0994F46E1E85F91500FCA11E /* WyhSegmentView.m in Sources */,
+				0994F46D1E85F91500FCA11E /* WyhSegmentStyle.m in Sources */,
 				09B34D181E8565C4005771C7 /* Demo2ViewController.m in Sources */,
+				0994F46B1E85F91500FCA11E /* WyhContentView.m in Sources */,
+				0994F46C1E85F91500FCA11E /* WyhScrollPageView.m in Sources */,
+				0994F47A1E8600E400FCA11E /* Demo3TestViewController.m in Sources */,
+				0994F4691E85F91500FCA11E /* WyhCollectionView.m in Sources */,
+				0994F46F1E85F91500FCA11E /* WyhTitleView.m in Sources */,
 				09FA613B1E824BA3001DEDCD /* WyhChannelManagerView.m in Sources */,
+				0994F46A1E85F91500FCA11E /* WyhConst.m in Sources */,
+				0994F47D1E8600FA00FCA11E /* Demo3WyhSubScrollPageVC.m in Sources */,
 				09FA61321E821E8C001DEDCD /* WyhChannelView.m in Sources */,
+				0994F4721E85F95700FCA11E /* Demo3WyhScrollPageBaseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
