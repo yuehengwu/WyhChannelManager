@@ -1,9 +1,13 @@
 # WyhChannelManager
 ** 新闻类app的福音 可实现今日头条频道管理页面 **
 
+### 详情移步至简书: 
+
+[被帅醒的小吴同志](http://www.jianshu.com/u/b76e3853ae0b)
+
 ## 效果示例
 
-![含热门的普通频道样式](http://upload-images.jianshu.io/upload_images/4097230-be16152ef495dfdb.gif?imageMogr2/auto-orient/strip)
+![含热门的普通频道样式.gif](http://upload-images.jianshu.io/upload_images/4097230-be16152ef495dfdb.gif?imageMogr2/auto-orient/strip)
 
 ## 支持自定义频道样式
 
@@ -11,7 +15,7 @@
 
 ## 支持火热频道
 
-![含热门的普通频道样式](http://upload-images.jianshu.io/upload_images/4097230-be16152ef495dfdb.gif?imageMogr2/auto-orient/strip)
+![含热门的普通频道样式.gif](http://upload-images.jianshu.io/upload_images/4097230-be16152ef495dfdb.gif?imageMogr2/auto-orient/strip)
 
 ## 支持置顶不可编辑频道处理
 
@@ -48,7 +52,7 @@
     return _managerView;
     }
 
-``
+```
 
 ## Contact me
 
