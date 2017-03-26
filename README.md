@@ -3,7 +3,7 @@
 
 ### 详情移步至简书: 
 
-[被帅醒的小吴同志](http://www.jianshu.com/u/b76e3853ae0b)
+[简书传送门](http://www.jianshu.com/p/de044b88393d)
 
 ## 效果示例
 
