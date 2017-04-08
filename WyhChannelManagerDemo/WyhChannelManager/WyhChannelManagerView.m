@@ -188,7 +188,7 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
         if(!model.isEnable){
             
             view.longGes = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(toplongGesture:)];
-            view.panGes = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(toppanGesture:)];
+//            view.panGes = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(toppanGesture:)];
         }
         view.tapGes = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(toptapGesture:)];
         
@@ -205,14 +205,16 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
 
 -(void)configBottomChannelView{
     
-    WyhChannelView *toplastView = self.topViewArr[self.topViewArr.count - 1];
-    CGFloat bottomY = toplastView.frame.origin.y + toplastView.bounds.size.height;
+//    WyhChannelView *toplastView = self.topViewArr[self.topViewArr.count - 1];
+//    CGFloat bottomY = toplastView.frame.origin.y + toplastView.bounds.size.height;
+
+    CGFloat bottomY = self.bottomTipView.frame.origin.y + self.bottomTipView.bounds.size.height;
     
     NSUInteger idx = 0;
     
     for (WyhChannelModel *model in self.manager.bottomChannelArr) {
         
-        WyhChannelView *view = [[WyhChannelView alloc]initWithFrame:CGRectMake(edgeX + idx%numberOfLine*(channelW+spaceX), topY + (idx/numberOfLine)*(channelH+spaceY) + bottomY, channelW, channelH)];
+        WyhChannelView *view = [[WyhChannelView alloc]initWithFrame:CGRectMake(edgeX + idx%numberOfLine*(channelW+spaceX), (idx/numberOfLine)*(channelH+spaceY) + bottomY, channelW, channelH)];
         view.model = model;
         view.isEdit = NO;
         view.tapGes = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(bottomtapGesture:)];
@@ -292,10 +294,18 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
             channelView.contentLabel.textColor = self.manager.style.normalTextColor;
             channelView.frame = CGRectMake(edgeX + idx%numberOfLine*(channelW+spaceX), topY + (idx/numberOfLine)*(channelH+spaceY) + bottomY, channelW, channelH);
         }];
+        
+        self.bottomTipView.frame = CGRectMake(0, bottomY, self.bounds.size.width, topY);
     }];
     
-    WyhChannelView *bottomlastView = self.bottomViewArr[self.bottomViewArr.count - 1];
-    CGFloat totalHeight = bottomlastView.frame.origin.y + bottomlastView.bounds.size.height;
+    CGFloat totalHeight = 0.0;
+    if (self.bottomViewArr.count > 0) {
+        WyhChannelView *bottomlastView = self.bottomViewArr[self.bottomViewArr.count - 1];
+        totalHeight = bottomlastView.frame.origin.y + bottomlastView.bounds.size.height;
+    }else{
+        totalHeight = self.bottomTipView.frame.origin.y + self.bottomTipView.bounds.size.height;
+    }
+    
     if (isScrollViewBounces) {
         if (totalHeight <= self.bounds.size.height) {
             self.scrollView.contentSize = CGSizeMake(0, self.bounds.size.height + 20.0);
@@ -306,7 +316,6 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
         self.scrollView.contentSize = CGSizeMake(0, totalHeight);
     }
     
-    self.bottomTipView.frame = CGRectMake(0, bottomY, self.bounds.size.width, topY);
 }
 
 #pragma mark - publish function
@@ -345,6 +354,11 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
                 WyhChannelView *view = (WyhChannelView *)obj;
                 view.contentLabel.textColor = self.manager.style.normalTextColor;
                 view.isEdit = YES;
+                //为了避免平移手势与scrollView滑动手势冲突
+                WyhChannelModel *model = self.manager.topChannelArr[idx];
+                if (!model.isEnable) {
+                    view.panGes = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(toppanGesture:)];
+                }
             }
         }];
 
@@ -357,6 +371,12 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
             if ([obj isKindOfClass:[WyhChannelView class]]) {
                 WyhChannelView *view = (WyhChannelView *)obj;
                 view.isEdit = NO;
+                
+                //关闭编辑时取消滑动手势
+                WyhChannelModel *model = self.manager.topChannelArr[idx];
+                if (!model.isEnable) {
+                    view.panGes = nil;
+                }
             }
         }];
     }
@@ -404,7 +424,7 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
     }
     
     WyhChannelView *touchView = (WyhChannelView *)panGes.view;
-    
+    [touchView.superview bringSubviewToFront:touchView];
     CGPoint movePoint;
     
     if (panGes.state == UIGestureRecognizerStateBegan) {
@@ -492,6 +512,7 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
 -(void)toplongGesture:(UILongPressGestureRecognizer *)longGes{
     
     WyhChannelView *touchView = (WyhChannelView *)longGes.view;
+    [touchView.superview bringSubviewToFront:touchView];
     CGPoint movePoint;
     
     if (longGes.state == UIGestureRecognizerStateBegan) {
