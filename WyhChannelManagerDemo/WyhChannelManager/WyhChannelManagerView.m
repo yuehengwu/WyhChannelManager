@@ -318,6 +318,14 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
     
 }
 
+-(void)reconfigInitialIndex{
+    
+    NSUInteger currentIndex = [self.topViewArr indexOfObject:self.initialView];
+    if (currentIndex != self.manager.initialIndex) {
+        self.manager.initialIndex = currentIndex;
+    }
+}
+
 #pragma mark - publish function
 
 -(void)reloadChannels{
@@ -503,6 +511,7 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
         //        }
         
         [self reconfigTopViewsWithAnimation:YES];
+        [self reconfigInitialIndex];
     }
     
 }
@@ -593,6 +602,7 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
 //            NSLog(@"name：%@",model.channel_name);
 //        }
         [self reconfigTopViewsWithAnimation:YES];
+        [self reconfigInitialIndex];
     }
 }
 #pragma mark - top tapGesturerecognizer
