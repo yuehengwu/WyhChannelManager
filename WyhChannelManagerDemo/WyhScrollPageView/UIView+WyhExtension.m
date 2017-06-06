@@ -123,7 +123,7 @@
 
 -(void)setWyh_centerY:(CGFloat)wyh_centerY{
     
-    self.center = CGPointMake(self.center.y, wyh_centerY);
+    self.center = CGPointMake(self.center.x, wyh_centerY);
     
 }
 

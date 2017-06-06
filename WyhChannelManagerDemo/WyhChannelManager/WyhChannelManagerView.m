@@ -177,8 +177,8 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
         
         WyhChannelView *view = [[WyhChannelView alloc]initWithFrame:CGRectMake(edgeX + idx%numberOfLine*(channelW+spaceX), topY + (idx/numberOfLine)*(channelH+spaceY), channelW, channelH)];
         view.model = model;
-        view.isEdit = self.isEdit;
-        if (idx == self.manager.initialIndex && isShowSlectedColor) {
+        view.isEdit = self.isEdit; /* setModel赋值需要在setIsEdit之前 */
+        if (idx == self.manager.initialIndex && isShowSlectedColor && !self.isEdit) {
             self.manager.initialModel = model;
             self.initialView = view;
             view.contentLabel.textColor = self.manager.style.selectedTextColor;
