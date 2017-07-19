@@ -90,7 +90,7 @@ static WyhChannelManager *manager = nil;
 
 +(void)setUpdateIfNeeds{
     
-    if (!manager.initialModel.isTop) {
+    if (!manager.initialModel.isTop && manager.initialIndex<0) {
         if (manager.callBack) {
             manager.callBack(manager.topChannelArr, manager.bottomChannelArr, manager.topChannelArr.count - 1); //若当前选中的频道被删除,则回调顶部最后一个
         }

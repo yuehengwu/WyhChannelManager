@@ -62,7 +62,7 @@ typedef void(^updateCallBack)(NSArray<WyhChannelModel *> * top,NSArray<WyhChanne
 /** 当前选中的model */
 @property (nonatomic, strong) WyhChannelModel *initialModel;
 /** 当前的index值 */
-@property (nonatomic, assign) NSUInteger initialIndex;
+@property (nonatomic, assign) NSInteger initialIndex;
 /** 当前的样式 */
 @property (nonatomic, strong) WyhChannelStyle *style;
 /** 回调更新的block */

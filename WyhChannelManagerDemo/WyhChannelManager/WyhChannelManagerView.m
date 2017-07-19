@@ -629,6 +629,9 @@ static BOOL isScrollViewBounces;            //频道界面是否有回弹效果
             return;
         }
         currentModel.isTop = NO;
+        if([topView isEqual:self.initialView]) {
+            self.manager.initialIndex = -1;/** tip: 若点击的是当前频道，则当前index置负 */
+        }
         if (currentIndex < self.topViewArr.count) {
             
             topView.tapGes = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(bottomtapGesture:)];
